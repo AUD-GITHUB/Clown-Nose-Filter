@@ -1,0 +1,19 @@
+.heading {
+    font-size: 40px;
+    width: 50%;
+}
+
+#click_img:hover{
+    background-color: rgb(255, 118, 63);
+}
+
+canvas{
+    animation-name: colorChange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorChange{
+    from{box-shadow: 1px 1px 38px red;}
+    to{box-shadow: 1px 1px 38px rgb(0, 140, 255);}
+}
