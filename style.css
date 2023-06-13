@@ -11,6 +11,7 @@ canvas{
     animation-name: colorChange;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    margin-top: 75px;
 }
 
 @keyframes colorChange{
