@@ -3,7 +3,6 @@ noseY = 0;
 
 function preload(){
     nose_pic = loadImage('Clown-Nose.png');
-    nose_pic.hide();
 }
 
 function setup(){
@@ -14,7 +13,7 @@ function setup(){
     video.hide();
 
     poseNet = ml5.poseNet(video, modelLoaded);
-    poseNet.on('pose', gotPoses());
+    poseNet.on('pose', gotPoses);
 }
 
 function modelLoaded(){
