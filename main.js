@@ -3,6 +3,7 @@ noseY = 0;
 
 function preload(){
     nose_pic = loadImage('Clown-Nose.png');
+    nose_pic.hide();
 }
 
 function setup(){
