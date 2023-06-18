@@ -25,14 +25,14 @@ function gotPoses(results){
         console.log(results);
         console.log('nose X = '+ results[0].pose.nose.x);
         console.log('nose Y = '+ results[0].pose.nose.y);
-        noseX = results[0].pose.nose.x + 30;
-        noseY = results[0].pose.nose.y + 30;
+        noseX = results[0].pose.nose.x - 20;
+        noseY = results[0].pose.nose.y - 20;
     }
 }
 
 function draw(){
     image(video, 0, 0, 400, 300);
-    image(nose_pic, noseX, noseY, 30, 30);
+    image(nose_pic, noseX, noseY, 40, 40);
 }
 
 function take_snapshot(){
